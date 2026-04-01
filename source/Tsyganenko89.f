@@ -110,12 +110,14 @@ C
    1        A(I)=PARAM(I,IOP)
 C
          ENDIF
-c       BOBERG extension to kp>6 with fixed Dst values
+c       Modified BOBERG extension to kp>5 with fixed Dst values
+c       IOPT = 6, and
+c       kp6: Dst = -150 nt
 c       kp7: Dst = -200 nt
-c       kp8: Dst = -225 nt
-c       kp9: Dst = -250 nt
+c       kp8: Dst = -250 nt
+c       kp9: Dst = -300 nt
         IF (IOPT.GT.7) THEN
-            A(5)=-10220 - 408.5 *(200.+ 25.*(IOPT-8))
+            A(5)=-10220 - 408.5 *(150.+ 50.*(IOPT-6))
         ENDIF
 C
         XI(1)=X
