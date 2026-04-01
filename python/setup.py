@@ -12,5 +12,5 @@ setup(name = 'IRBEM',
     version = '0.1.0',
     packages = ['IRBEM'],
     install_requires = ['wheel', 'python-dateutil', 
-                        'numpy >= 1.12', 'scipy >= 0.14']
+                        'numpy', 'scipy']
     )
