@@ -118,7 +118,7 @@ c       kp8: Dst = -250 nt
 c       kp9: Dst = -300 nt
         IF (IOPT.GT.6) THEN
             IOP = 6
-            A(5)=-10220 - 408.5 *(150.+ 50.*(IOPT-6))
+            A(5)=-10220 - 408.5 *(150.+ 50.*(IOPT-7))
         ENDIF
 C
         XI(1)=X
